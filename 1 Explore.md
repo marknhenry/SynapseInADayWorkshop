@@ -128,3 +128,35 @@ In the Synapse workspace, click on **Integrate** on the left.  Next to the word 
 
 # Visualize with Power BI
 
+## Create a Power BI workspace
+Run all the sections on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-visualize-power-bi) page.  
+
+# Trying out Machine Learning
+## Create a Machine Learning Service Workspace
+
+* In the resource group you created, Click **Add**, and search for **Machine Learning**.  Click Create.  Enter the following details: 
+    * Workspace Name: mlworkspace
+    * Region: pick a region
+    * Leave the rest of the fields as default
+    * If Container Registry is not populated with a new one automatically, click **Create New** and enter a unique name.  Click **Save**
+    * Click **Review + create**, then **Create**
+    * Leave it a few minutes to provision.  
+
+## Create a new linked Service for the ML Service
+
+<r>In the section **Create a service principal**, step 5, the service princial will already be created.  click on it, and copy the **Application ID**</r>
+
+## Train an AutoML model with no-code
+Follow the steps [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-automl)
+
+
+# Governance of Data
+https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview
+
+
+
+
+
+<g>This is somethign that you show the customer if you are demoing this</g>
+
+<o>This is something that you do once if you are setting up</o>
