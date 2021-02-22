@@ -9,7 +9,6 @@ warning {
 
 # Environment Setup and a Dip into Synapse
 <g>**INFO**: This step takes about 30 mins</g>
-* Create a single Resource Group to hold our 
 * Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
 * Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
 
@@ -62,8 +61,6 @@ WITH
 OPTION (LABEL = 'COPY : Load [dbo].[Trip] - Taxi dataset');
 ```
 * Click the **Run** button.  
-
-
 <g>**INFO**: This should take a little less than 60 seconds.  </g>
 
 
@@ -100,31 +97,10 @@ df.write.mode("overwrite").parquet("/NYCTaxi/PassengerCountStats_parquetformat")
 ```
 * Explore simple queries using pyspark and SQL on the data now in you data lake using Steps 1 - 8 [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-storage)
 
-# Integration
-## Create a dataset
-In the Synapse workspace, click on **Linked services** then click on **New**
-* Search for **Azure Data Lake Storage Gen2**, click **Continue** at the bottom
-* **Name**: LSDataLake
-* **Connect via integration runtime**: AutoRsolveIntegrationRuntime
-* **Authentication method**: Account Key
-* **Account selection method**: From Azure subscription
-* **Azure subscription**: select your subscription
-* **Storage Account Name**: select the data lake you created above
-* **Test Connection**: **To linked service**
-* Click **Test Connection** 
-* Click **Create**
+# Sample:
 
-## Create a Pipeline
-In the Synapse workspace, click on **Integrate** on the left.  Next to the word **Integrate**, click on the New button and select **Copy Data Tool**
-* **Properties > Task Name**: QuickCopyActivity
-* **Properties > Task cadence or task schedule**: Run once now
-* **Source > Connection**: LSDataLake
-* **Source > Dataset > File or Folder** click **Browse** > double click **Users** > double click **NYCTaxi** > **PassengerCountStats_csvformat** > **part-0000-..**. (You should find a file with a long identifier), then click **Choose**
-* **Source > Dataset > Binary** copy: Unchecked
-* **Destination > Connection > SQLPOOL1**
-* Keep clicking **next** until the last page, where the copy activity runs successfully.  
-* Click **Finish** to close the tool
-* Under **Pipelines**, click on the **QuickCopy** pipeline just created, and click on the Copy Data activity on the canvas to see its details.  
+<r>TODO: Important thing to do </r>
 
-# Visualize with Power BI
+<o>TODO: Less important thing to do </o>
 
+<g>DONE: Breath deeply and improve karma </g>
