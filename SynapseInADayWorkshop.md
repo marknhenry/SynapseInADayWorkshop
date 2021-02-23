@@ -8,7 +8,7 @@ warning {
 </style>
 
 # Environment Setup and a Dip into Synapse
-<g>**INFO**: This step takes about 30 mins</g>
+! **INFO**: This step takes about 30 mins
 * Create a single Resource Group to hold our 
 * Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
 * Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
