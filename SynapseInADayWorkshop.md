@@ -1,14 +1,5 @@
-<style>
-r { color: white; background-color:red}
-o { color: white; background-color: orange }
-g { color: white; background-color: mediumseagreen }
-warning {
-  background-color: lightblue;
-}
-</style>
-
 # Environment Setup and a Dip into Synapse
-! **INFO**: This step takes about 30 mins
+**INFO**: This step takes about 30 mins
 * Create a single Resource Group to hold our 
 * Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
 * Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
