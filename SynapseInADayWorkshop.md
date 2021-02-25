@@ -1,15 +1,19 @@
-<style>
-r { color: white; background-color:red}
-o { color: white; background-color: orange }
-g { color: white; background-color: mediumseagreen }
-warning {
-  background-color: lightblue;
-}
-</style>
+Level 50 - 360 view of Synapse.  
 
-# Environment Setup and a Dip into Synapse
-<g>**INFO**: This step takes about 30 mins</g>
-* Create a single Resource Group to hold our 
+This walkthrough gives you an overview of Synapse as tool to manage your data requirements end-to-end.  It touches on the following: 
+* Setting up the strucutred and unstructure data stores
+* Setting up the SQL and Spark pools, think of this as the Compute
+* Setting up source control
+* Loading data to the database and the datalake
+* Basic how to on Exploratory Data Analysis using Notebooks
+* Basic integration workflow to copy data
+* Power BI report to view results inside Synapse WS
+* AutoML experiment to enrich data, also inside Synpase WS
+* Initial data governance with Purview
+
+# Setting up the strucutred and unstructure data stores
+**This step takes about 30 mins**
+* Create a single Resource Group to hold the resources
 * Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
 * Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
 
@@ -162,3 +166,8 @@ https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/
 <g>This is somethign that you show the customer if you are demoing this</g>
 
 <o>This is something that you do once if you are setting up</o>
+
+# Git integration
+
+
+# Integration Runtime
