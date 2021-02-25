@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Level 50 - 360 view of Synapse.  
 
 This walkthrough gives you an overview of Synapse as tool to manage your data requirements end-to-end.  It touches on the following: 
@@ -26,6 +27,13 @@ This walkthrough gives you an overview of Synapse as tool to manage your data re
 * Select **Select Reporsitory**, and pick the **Azure DevOps organization name** that you have or created in the steps above.  Select the **Project Name** and **Repository Name**.  In the **Collaboration branch**, click **Create New**, and in the **Branch name** enter **dev**.  
 * Click **Apply**
 * In the **Set Working Branch**, select **Use Existing** and from the drop down list select **dev**.  
+=======
+# Environment Setup and a Dip into Synapse
+**INFO**: This step takes about 30 mins
+* Create a single Resource Group to hold our 
+* Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
+* Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
+>>>>>>> 90f5a040607d4d6fcfc7da88d03a2530c25a476c
 
 ## Load 2 Million Rows of NYC Taxi Data
 * Open Synapse Studio
@@ -174,4 +182,10 @@ https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/
 # Git integration
 
 
+<<<<<<< HEAD
 # Integration Runtime
+=======
+<g>This is somethign that you show the customer if you are demoing this</g>
+
+<o>This is something that you do once if you are setting up</o>
+>>>>>>> 90f5a040607d4d6fcfc7da88d03a2530c25a476c
