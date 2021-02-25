@@ -1,4 +1,4 @@
-Level 50 - 360 view of Synapse.  
+# Level 50 - 360 view of Synapse
 
 This walkthrough gives you an overview of Synapse as tool to manage your data requirements end-to-end.  It touches on the following: 
 * Setting up the strucutred and unstructure data stores
@@ -17,7 +17,7 @@ This walkthrough gives you an overview of Synapse as tool to manage your data re
 * Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page (15 mins to create create ws, 15 mins to create the SQL and Spark pools)
 
 
-## Setting up Source Control
+# Setting up Source Control
 * Log on to [Azure DevOps](https://dev.azure.com/)
 * If you have an organization, use it, else, create one: On the left **New Organization**. Give a name to your orgnaization and a region to host the code in.  Click **Continue** 
 * Create a project, and set a visibility level that works for you.  Click on **Create Project**
@@ -27,7 +27,7 @@ This walkthrough gives you an overview of Synapse as tool to manage your data re
 * Click **Apply**
 * In the **Set Working Branch**, select **Use Existing** and from the drop down list select **dev**.  
 
-## Load 2 Million Rows of NYC Taxi Data
+# Load 2 Million Rows of NYC Taxi Data
 * Open Synapse Studio
 * Navigate to the **Develop** hub, click the + button to add a new resource, then **create new SQL script**, and enter the following code: 
 ``` sql
@@ -78,9 +78,7 @@ OPTION (LABEL = 'COPY : Load [dbo].[Trip] - Taxi dataset');
 * Click the **Run** button.  
 
 
-<g>**INFO**: This should take a little less than 60 seconds.  </g>
-
-
+**INFO**: This should take a little less than 60 seconds. 
 
 # Data Exploration (A few Scenarios)
 ## Scenario 1: Data in SQL Pool (Structured world) and we want to analyze it
@@ -163,10 +161,5 @@ Run all the sections on [this](https://docs.microsoft.com/en-us/azure/synapse-an
 ## Train an AutoML model with no-code
 Follow the steps [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/machine-learning/tutorial-automl)
 
-<o>This takes longer to run</o>
-
-
 # Governance of Data
-https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview
-
-# Integration Runtime
+Follow the steps [here](https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview) to create a data catalog and to connect it to your Synapse Environment.  
