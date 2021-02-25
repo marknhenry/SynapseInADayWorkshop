@@ -14,8 +14,18 @@ This walkthrough gives you an overview of Synapse as tool to manage your data re
 # Setting up the strucutred and unstructure data stores
 **This step takes about 30 mins**
 * Create a single Resource Group to hold the resources
-* Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page
-* Load the NYC Taxi Data into the SQL pool (steps 1 – 5 here).  This creates a table in our structured data warehouse (SQL Pool, here named SQLPOOL1).
+* Follow all steps on [this](https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace) page (15 mins to create create ws, 15 mins to create the SQL and Spark pools)
+
+
+## Setting up Source Control
+* Log on to [Azure DevOps](https://dev.azure.com/)
+* If you have an organization, use it, else, create one: On the left **New Organization**. Give a name to your orgnaization and a region to host the code in.  Click **Continue** 
+* Create a project, and set a visibility level that works for you.  Click on **Create Project**
+* In Synapse, go to **Manage** > **Source Control** > **Git configuration**.  Click **Configure** in the middle of the screen.  
+* In **Repository type** select **Azure DevOps Git**.  For **Azure Active Directory** select your directory.  Click **Continue**.  
+* Select **Select Reporsitory**, and pick the **Azure DevOps organization name** that you have or created in the steps above.  Select the **Project Name** and **Repository Name**.  In the **Collaboration branch**, click **Create New**, and in the **Branch name** enter **dev**.  
+* Click **Apply**
+* In the **Set Working Branch**, select **Use Existing** and from the drop down list select **dev**.  
 
 ## Load 2 Million Rows of NYC Taxi Data
 * Open Synapse Studio
@@ -160,12 +170,6 @@ Follow the steps [here](https://docs.microsoft.com/en-us/azure/synapse-analytics
 https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview
 
 
-
-
-
-<g>This is somethign that you show the customer if you are demoing this</g>
-
-<o>This is something that you do once if you are setting up</o>
 
 # Git integration
 
