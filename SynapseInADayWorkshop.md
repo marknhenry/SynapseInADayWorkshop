@@ -169,15 +169,4 @@ Follow the steps [here](https://docs.microsoft.com/en-us/azure/synapse-analytics
 # Governance of Data
 https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview
 
-
-
-# Git integration
-
-
-<<<<<<< HEAD
 # Integration Runtime
-=======
-<g>This is somethign that you show the customer if you are demoing this</g>
-
-<o>This is something that you do once if you are setting up</o>
->>>>>>> 90f5a040607d4d6fcfc7da88d03a2530c25a476c
